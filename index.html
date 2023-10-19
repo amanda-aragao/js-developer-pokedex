@@ -20,6 +20,10 @@
     <!-- Nosso CSS -->
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/pokedex.css">
+
+    <!--Bootstrap JavaScript e Popper.js (modal) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -35,12 +39,24 @@
                 Load More
             </button>
         </div>
+
+        <div class="modal fade pokemons " id="pokemonModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">                    
+                    <div class="modal-body" id="pokemonModalBody">
+                     
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/main.js"></script>
+
+  
 </body>
 
 </html>
